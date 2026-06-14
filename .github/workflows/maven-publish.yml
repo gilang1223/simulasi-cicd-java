@@ -1,0 +1,39 @@
+name: Java CI/CD Simulation
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+    
+    - name: Set up JDK 11
+      uses: actions/setup-java@v4
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+        cache: maven
+
+    # ---- TAHAPAN CONTINUOUS INTEGRATION (CI) ----
+    - name: Build with Maven (Standard Clean Package)
+      run: mvn -B package --file pom.xml -DskipTests
+
+    # ---- TAHAPAN CONTINUOUS DEPLOYMENT (CD) ----
+    - name: Run Simulation Continuous Deployment
+      run: |
+        echo "=========================================================="
+        echo "MEMPRAKTEKKAN SIMULASI CONTINUOUS DEPLOYMENT & DELIVERY"
+        echo "=========================================================="
+        echo "[STATUS] Memeriksa file artifact hasil kompilasi..."
+        ls target/
+        echo "[STATUS] Menghubungkan ke server target (Simulasi)..."
+        echo "[STATUS] Mengunggah file aplikasi (.jar) ke lingkungan produksi..."
+        echo "[SUKSES] Aplikasi Java BERHASIL DI-DEPLOY secara otomatis!"
+        echo "=========================================================="
