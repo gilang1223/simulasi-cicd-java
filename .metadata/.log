@@ -1,0 +1,519 @@
+!SESSION 2026-06-14 23:08:29.813 -----------------------------------------------
+eclipse.buildId=4.34.0.20241128-0756
+java.version=23
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2026-06-14 23:09:11.870
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.epp.mpc.core 4 0 2026-06-14 23:09:12.217
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.epp.mpc.core [171]
+  Unresolved requirement: Import-Package: org.apache.hc.core5.http.message; version="[5.1.0,5.3.0)"
+    -> Export-Package: org.apache.hc.core5.http.message; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.net,org.apache.hc.core5.util"
+       org.apache.httpcomponents.core5.httpcore5 [65]
+         Unresolved requirement: Import-Package: org.conscrypt; resolution:="optional"
+  Unresolved requirement: Import-Package: org.apache.hc.core5.http.io.support; version="[5.1.0,5.3.0)"
+    -> Export-Package: org.apache.hc.core5.http.io.support; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.http.support,org.apache.hc.core5.net"
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http.impl.io; version="[5.1.0,5.4.0)"
+    -> Export-Package: org.apache.hc.client5.http.impl.io; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.config,org.apache.hc.client5.http.io,org.apache.hc.client5.http.socket,org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.impl.io,org.apache.hc.core5.http.io,org.apache.hc.core5.http.message,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.pool,org.apache.hc.core5.util"
+       org.apache.httpcomponents.client5.httpclient5 [63]
+         Unresolved requirement: Import-Package: org.brotli.dec; version="[0.1.0,1.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: org.conscrypt; version="[2.5.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.io.entity; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.io.entity; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.io"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.message; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.message; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.net,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.protocol; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.protocol; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="javax.net.ssl,org.apache.hc.core5.function,org.apache.hc.core5.http"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.impl.nio; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.impl.nio; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="javax.net.ssl,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.impl,org.apache.hc.core5.http.message,org.apache.hc.core5.http.nio,org.apache.hc.core5.http.nio.ssl,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.reactor,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.nio.entity; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.nio.entity; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.concurrent,org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.nio"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.net; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.net; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.http"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.io.support; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.io.support; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.http.support,org.apache.hc.core5.net"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.util; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.util; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.http"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.reactor; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.reactor; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.concurrent,org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.io,org.apache.hc.core5.net,org.apache.hc.core5.reactor.ssl,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.io; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.io; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.protocol,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.ssl; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.ssl; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="javax.net.ssl"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.function; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.function; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.impl; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.impl; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.pool; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.pool; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.concurrent,org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.io,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.nio.ssl; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.nio.ssl; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="javax.net.ssl,org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.net,org.apache.hc.core5.reactor,org.apache.hc.core5.reactor.ssl,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.reactor.ssl; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.reactor.ssl; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="javax.net.ssl,org.apache.hc.core5.concurrent,org.apache.hc.core5.function,org.apache.hc.core5.io,org.apache.hc.core5.net,org.apache.hc.core5.reactor,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.nio; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.nio; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.protocol,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.config; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.config; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.impl.io; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.impl.io; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="javax.net.ssl,org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.impl,org.apache.hc.core5.http.io,org.apache.hc.core5.http.message,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.io; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.io; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.nio.support; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.nio.support; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.concurrent,org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.http.nio,org.apache.hc.core5.http.protocol,org.apache.hc.core5.http.support,org.apache.hc.core5.net"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.ssl; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.ssl; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.http"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="javax.net.ssl,org.apache.hc.core5.function,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.net,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.nio.command; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.nio.command; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.concurrent,org.apache.hc.core5.function,org.apache.hc.core5.http.nio,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.reactor"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.concurrent; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.concurrent; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.support; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.support; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.message,org.apache.hc.core5.net"
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http.entity; version="[5.1.0,5.4.0)"
+    -> Export-Package: org.apache.hc.client5.http.entity; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.io.entity"
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http.auth; version="[5.1.0,5.4.0)"
+    -> Export-Package: org.apache.hc.client5.http.auth; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.protocol,org.ietf.jgss"
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http.impl.classic; version="[5.1.0,5.4.0)"
+    -> Export-Package: org.apache.hc.client5.http.impl.classic; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.auth,org.apache.hc.client5.http.classic,org.apache.hc.client5.http.config,org.apache.hc.client5.http.cookie,org.apache.hc.client5.http.entity,org.apache.hc.client5.http.impl,org.apache.hc.client5.http.io,org.apache.hc.client5.http.protocol,org.apache.hc.client5.http.routing,org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.impl.io,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.pool,org.apache.hc.core5.util"
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http.io; version="[5.1.0,5.4.0)"
+    -> Export-Package: org.apache.hc.client5.http.io; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="javax.net.ssl,org.apache.hc.client5.http,org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.impl.io,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.util"
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http.classic; version="[5.1.0,5.4.0)"
+    -> Export-Package: org.apache.hc.client5.http.classic; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.protocol,org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.util"
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http.config; version="[5.1.0,5.4.0)"
+    -> Export-Package: org.apache.hc.client5.http.config; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.ssl,org.apache.hc.core5.http2,org.apache.hc.core5.util"
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http.protocol; version="[5.1.0,5.4.0)"
+    -> Export-Package: org.apache.hc.client5.http.protocol; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.auth,org.apache.hc.client5.http.config,org.apache.hc.client5.http.cookie,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.protocol"
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http.impl; version="[5.1.0,5.4.0)"
+    -> Export-Package: org.apache.hc.client5.http.impl; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.auth,org.apache.hc.client5.http.cookie,org.apache.hc.client5.http.protocol,org.apache.hc.client5.http.psl,org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.impl,org.apache.hc.core5.http.protocol,org.apache.hc.core5.net,org.apache.hc.core5.pool,org.apache.hc.core5.util,org.slf4j"
+  Unresolved requirement: Import-Package: org.apache.hc.core5.http.io; version="[5.1.0,5.3.0)"
+    -> Export-Package: org.apache.hc.core5.http.io; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.protocol,org.apache.hc.core5.util"
+  Unresolved requirement: Import-Package: org.apache.hc.core5.http.io.entity; version="[5.1.0,5.3.0)"
+    -> Export-Package: org.apache.hc.core5.http.io.entity; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.io"
+  Unresolved requirement: Import-Package: org.apache.hc.core5.http.protocol; version="[5.1.0,5.3.0)"
+    -> Export-Package: org.apache.hc.core5.http.protocol; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="javax.net.ssl,org.apache.hc.core5.function,org.apache.hc.core5.http"
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http.classic.methods; version="[5.1.0,5.4.0)"
+    -> Export-Package: org.apache.hc.client5.http.classic.methods; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.client5.http.config,org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.message"
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http.impl.auth; version="[5.1.0,5.4.0)"
+    -> Export-Package: org.apache.hc.client5.http.impl.auth; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.auth,org.apache.hc.core5.http,org.apache.hc.core5.http.message,org.apache.hc.core5.http.protocol,org.ietf.jgss"
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http; version="[5.1.0,5.4.0)"
+    -> Export-Package: org.apache.hc.client5.http; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.client5.http.auth,org.apache.hc.client5.http.cookie,org.apache.hc.client5.http.protocol,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.protocol,org.apache.hc.core5.net,org.apache.hc.core5.util"
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http.cookie; version="[5.1.0,5.4.0)"
+    -> Export-Package: org.apache.hc.client5.http.cookie; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.protocol"
+  Unresolved requirement: Import-Package: org.apache.hc.core5.util; version="[5.1.0,5.3.0)"
+    -> Export-Package: org.apache.hc.core5.util; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.http"
+  Unresolved requirement: Import-Package: org.apache.hc.core5.http; version="[5.1.0,5.3.0)"
+    -> Export-Package: org.apache.hc.core5.http; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="javax.net.ssl,org.apache.hc.core5.function,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.net,org.apache.hc.core5.util"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.epp.mpc.core [osgi.identity; type="osgi.bundle"; version:Version="1.11.0.v20240709-1650"; osgi.identity="org.eclipse.epp.mpc.core"; singleton:="true"] because it is exposed to package 'org.apache.hc.core5.http' from resources org.apache.httpcomponents.core5.httpcore5 [osgi.identity; type="osgi.bundle"; version:Version="5.2.3.v20230922-1600"; osgi.identity="org.apache.httpcomponents.core5.httpcore5"] and org.apache.httpcomponents.core5.httpcore5 [osgi.identity; type="osgi.bundle"; version:Version="5.3.2.v20250110-0800"; osgi.identity="org.apache.httpcomponents.core5.httpcore5"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.epp.mpc.core [osgi.identity; type="osgi.bundle"; version:Version="1.11.0.v20240709-1650"; osgi.identity="org.eclipse.epp.mpc.core"; singleton:="true"]
+    import: (&(osgi.wiring.package=org.apache.hc.core5.http)(&(version>=5.1.0)(!(version>=5.3.0))))
+     |
+    export: osgi.wiring.package: org.apache.hc.core5.http
+  org.apache.httpcomponents.core5.httpcore5 [osgi.identity; type="osgi.bundle"; version:Version="5.2.3.v20230922-1600"; osgi.identity="org.apache.httpcomponents.core5.httpcore5"]
+
+Chain 2:
+  org.eclipse.epp.mpc.core [osgi.identity; type="osgi.bundle"; version:Version="1.11.0.v20240709-1650"; osgi.identity="org.eclipse.epp.mpc.core"; singleton:="true"]
+    import: (&(osgi.wiring.package=org.apache.hc.client5.http)(&(version>=5.1.0)(!(version>=5.4.0))))
+     |
+    export: osgi.wiring.package=org.apache.hc.client5.http; uses:=org.apache.hc.core5.http
+  org.apache.httpcomponents.client5.httpclient5 [osgi.identity; type="osgi.bundle"; version:Version="5.3.1.v20240126-0900"; osgi.identity="org.apache.httpcomponents.client5.httpclient5"]
+    import: (&(osgi.wiring.package=org.apache.hc.core5.http)(&(version>=5.2.0)(!(version>=6.0.0))))
+     |
+    export: osgi.wiring.package: org.apache.hc.core5.http
+  org.apache.httpcomponents.core5.httpcore5 [osgi.identity; type="osgi.bundle"; version:Version="5.3.2.v20250110-0800"; osgi.identity="org.apache.httpcomponents.core5.httpcore5"]
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2102)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2093)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2033)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1996)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1912)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.epp.mpc.core.win32 4 0 2026-06-14 23:09:12.252
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.epp.mpc.core.win32 [172]
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http.auth; version="[5.1.0,5.4.0)"
+    -> Export-Package: org.apache.hc.client5.http.auth; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.protocol,org.ietf.jgss"
+       org.apache.httpcomponents.client5.httpclient5 [63]
+         Unresolved requirement: Import-Package: org.brotli.dec; version="[0.1.0,1.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: org.conscrypt; version="[2.5.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.io.entity; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.io.entity; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.io"
+              org.apache.httpcomponents.core5.httpcore5 [65]
+                Unresolved requirement: Import-Package: org.conscrypt; resolution:="optional"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.message; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.message; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.net,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.protocol; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.protocol; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="javax.net.ssl,org.apache.hc.core5.function,org.apache.hc.core5.http"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.impl.nio; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.impl.nio; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="javax.net.ssl,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.impl,org.apache.hc.core5.http.message,org.apache.hc.core5.http.nio,org.apache.hc.core5.http.nio.ssl,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.reactor,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.nio.entity; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.nio.entity; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.concurrent,org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.nio"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.net; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.net; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.http"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.io.support; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.io.support; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.http.support,org.apache.hc.core5.net"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.util; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.util; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.http"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.reactor; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.reactor; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.concurrent,org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.io,org.apache.hc.core5.net,org.apache.hc.core5.reactor.ssl,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.io; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.io; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.protocol,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.ssl; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.ssl; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="javax.net.ssl"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.function; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.function; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.impl; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.impl; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.pool; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.pool; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.concurrent,org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.io,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.nio.ssl; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.nio.ssl; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="javax.net.ssl,org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.net,org.apache.hc.core5.reactor,org.apache.hc.core5.reactor.ssl,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.reactor.ssl; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.reactor.ssl; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="javax.net.ssl,org.apache.hc.core5.concurrent,org.apache.hc.core5.function,org.apache.hc.core5.io,org.apache.hc.core5.net,org.apache.hc.core5.reactor,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.nio; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.nio; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.protocol,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.config; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.config; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.impl.io; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.impl.io; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="javax.net.ssl,org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.impl,org.apache.hc.core5.http.io,org.apache.hc.core5.http.message,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.io; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.io; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.nio.support; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.nio.support; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.concurrent,org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.http.nio,org.apache.hc.core5.http.protocol,org.apache.hc.core5.http.support,org.apache.hc.core5.net"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.ssl; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.ssl; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.http"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="javax.net.ssl,org.apache.hc.core5.function,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.net,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.nio.command; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.nio.command; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.concurrent,org.apache.hc.core5.function,org.apache.hc.core5.http.nio,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.reactor"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.concurrent; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.concurrent; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.support; version="[5.2.0,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.support; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.message,org.apache.hc.core5.net"
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http.impl.classic; version="[5.1.0,5.4.0)"
+    -> Export-Package: org.apache.hc.client5.http.impl.classic; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.auth,org.apache.hc.client5.http.classic,org.apache.hc.client5.http.config,org.apache.hc.client5.http.cookie,org.apache.hc.client5.http.entity,org.apache.hc.client5.http.impl,org.apache.hc.client5.http.io,org.apache.hc.client5.http.protocol,org.apache.hc.client5.http.routing,org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.impl.io,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.pool,org.apache.hc.core5.util"
+  Unresolved requirement: Import-Package: org.apache.hc.core5.http.config; version="[5.1.0,5.3.0)"
+    -> Export-Package: org.apache.hc.core5.http.config; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.util"
+  Unresolved requirement: Import-Package: org.eclipse.epp.internal.mpc.core.transport.httpclient; bundle-version="1.11.0"
+    -> Export-Package: org.eclipse.epp.internal.mpc.core.transport.httpclient; bundle-symbolic-name="org.eclipse.epp.mpc.core"; bundle-version="1.11.0.v20240709-1650"; version="0.0.0"; x-friends:="org.eclipse.epp.mpc.core.win32"; uses:="org.apache.http.auth,  org.apache.http.protocol,  org.apache.http.impl.client,  org.apache.http,  org.eclipse.epp.mpc.core.service,  org.apache.http.client,  org.eclipse.core.runtime,  org.apache.http.client.fluent,  org.apache.http.client.protocol"
+       org.eclipse.epp.mpc.core [171]
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.message; version="[5.1.0,5.3.0)"
+           -> Export-Package: org.apache.hc.core5.http.message; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.net,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.io.support; version="[5.1.0,5.3.0)"
+           -> Export-Package: org.apache.hc.core5.http.io.support; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.http.support,org.apache.hc.core5.net"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.impl.io; version="[5.1.0,5.4.0)"
+           -> Export-Package: org.apache.hc.client5.http.impl.io; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.config,org.apache.hc.client5.http.io,org.apache.hc.client5.http.socket,org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.impl.io,org.apache.hc.core5.http.io,org.apache.hc.core5.http.message,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.pool,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.entity; version="[5.1.0,5.4.0)"
+           -> Export-Package: org.apache.hc.client5.http.entity; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.io.entity"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.auth; version="[5.1.0,5.4.0)"
+           -> Export-Package: org.apache.hc.client5.http.auth; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.protocol,org.ietf.jgss"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.impl.classic; version="[5.1.0,5.4.0)"
+           -> Export-Package: org.apache.hc.client5.http.impl.classic; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.auth,org.apache.hc.client5.http.classic,org.apache.hc.client5.http.config,org.apache.hc.client5.http.cookie,org.apache.hc.client5.http.entity,org.apache.hc.client5.http.impl,org.apache.hc.client5.http.io,org.apache.hc.client5.http.protocol,org.apache.hc.client5.http.routing,org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.impl.io,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.pool,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.io; version="[5.1.0,5.4.0)"
+           -> Export-Package: org.apache.hc.client5.http.io; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="javax.net.ssl,org.apache.hc.client5.http,org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.impl.io,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.classic; version="[5.1.0,5.4.0)"
+           -> Export-Package: org.apache.hc.client5.http.classic; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.protocol,org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.config; version="[5.1.0,5.4.0)"
+           -> Export-Package: org.apache.hc.client5.http.config; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.ssl,org.apache.hc.core5.http2,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.protocol; version="[5.1.0,5.4.0)"
+           -> Export-Package: org.apache.hc.client5.http.protocol; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.auth,org.apache.hc.client5.http.config,org.apache.hc.client5.http.cookie,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.protocol"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.impl; version="[5.1.0,5.4.0)"
+           -> Export-Package: org.apache.hc.client5.http.impl; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.auth,org.apache.hc.client5.http.cookie,org.apache.hc.client5.http.protocol,org.apache.hc.client5.http.psl,org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.impl,org.apache.hc.core5.http.protocol,org.apache.hc.core5.net,org.apache.hc.core5.pool,org.apache.hc.core5.util,org.slf4j"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.io; version="[5.1.0,5.3.0)"
+           -> Export-Package: org.apache.hc.core5.http.io; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.protocol,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.io.entity; version="[5.1.0,5.3.0)"
+           -> Export-Package: org.apache.hc.core5.http.io.entity; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.io"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.protocol; version="[5.1.0,5.3.0)"
+           -> Export-Package: org.apache.hc.core5.http.protocol; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="javax.net.ssl,org.apache.hc.core5.function,org.apache.hc.core5.http"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.classic.methods; version="[5.1.0,5.4.0)"
+           -> Export-Package: org.apache.hc.client5.http.classic.methods; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.client5.http.config,org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.message"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.impl.auth; version="[5.1.0,5.4.0)"
+           -> Export-Package: org.apache.hc.client5.http.impl.auth; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.auth,org.apache.hc.core5.http,org.apache.hc.core5.http.message,org.apache.hc.core5.http.protocol,org.ietf.jgss"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http; version="[5.1.0,5.4.0)"
+           -> Export-Package: org.apache.hc.client5.http; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.client5.http.auth,org.apache.hc.client5.http.cookie,org.apache.hc.client5.http.protocol,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.protocol,org.apache.hc.core5.net,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.cookie; version="[5.1.0,5.4.0)"
+           -> Export-Package: org.apache.hc.client5.http.cookie; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.protocol"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.util; version="[5.1.0,5.3.0)"
+           -> Export-Package: org.apache.hc.core5.util; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.http"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http; version="[5.1.0,5.3.0)"
+           -> Export-Package: org.apache.hc.core5.http; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="javax.net.ssl,org.apache.hc.core5.function,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.net,org.apache.hc.core5.util"
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http.impl.auth; version="[5.1.0,5.4.0)"
+    -> Export-Package: org.apache.hc.client5.http.impl.auth; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.auth,org.apache.hc.core5.http,org.apache.hc.core5.http.message,org.apache.hc.core5.http.protocol,org.ietf.jgss"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.epp.mpc.core.win32 [osgi.identity; type="osgi.bundle"; version:Version="1.11.0.v20240709-0639"; osgi.identity="org.eclipse.epp.mpc.core.win32"; singleton:="true"] because it is exposed to package 'org.apache.hc.client5.http.auth' from resources org.apache.httpcomponents.client5.httpclient5 [osgi.identity; type="osgi.bundle"; version:Version="5.3.1.v20240126-0900"; osgi.identity="org.apache.httpcomponents.client5.httpclient5"] and org.apache.httpcomponents.client5.httpclient5 [osgi.identity; type="osgi.bundle"; version:Version="5.4.1.v20241029-1100"; osgi.identity="org.apache.httpcomponents.client5.httpclient5"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.epp.mpc.core.win32 [osgi.identity; type="osgi.bundle"; version:Version="1.11.0.v20240709-0639"; osgi.identity="org.eclipse.epp.mpc.core.win32"; singleton:="true"]
+    import: (&(osgi.wiring.package=org.apache.hc.client5.http.auth)(&(version>=5.1.0)(!(version>=5.4.0))))
+     |
+    export: osgi.wiring.package: org.apache.hc.client5.http.auth
+  org.apache.httpcomponents.client5.httpclient5 [osgi.identity; type="osgi.bundle"; version:Version="5.3.1.v20240126-0900"; osgi.identity="org.apache.httpcomponents.client5.httpclient5"]
+
+Chain 2:
+  org.eclipse.epp.mpc.core.win32 [osgi.identity; type="osgi.bundle"; version:Version="1.11.0.v20240709-0639"; osgi.identity="org.eclipse.epp.mpc.core.win32"; singleton:="true"]
+    import: (&(osgi.wiring.package=org.apache.hc.client5.http.impl.win)(&(version>=5.1.0)(!(version>=5.4.0))))
+     |
+    export: osgi.wiring.package=org.apache.hc.client5.http.impl.win; uses:=org.apache.hc.client5.http.auth
+  org.apache.httpcomponents.client5.httpclient5-win [osgi.identity; type="osgi.bundle"; version:Version="5.2.3.v20231203-1619"; osgi.identity="org.apache.httpcomponents.client5.httpclient5-win"]
+    import: (&(osgi.wiring.package=org.apache.hc.client5.http.auth)(&(version>=5.2.0)(!(version>=6.0.0))))
+     |
+    export: osgi.wiring.package: org.apache.hc.client5.http.auth
+  org.apache.httpcomponents.client5.httpclient5 [osgi.identity; type="osgi.bundle"; version:Version="5.4.1.v20241029-1100"; osgi.identity="org.apache.httpcomponents.client5.httpclient5"]
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2102)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2093)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2033)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1996)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1912)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.epp.mpc.ui 4 0 2026-06-14 23:09:12.331
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.epp.mpc.ui [174]
+  Unresolved requirement: Require-Bundle: org.eclipse.epp.mpc.core; bundle-version="[1.11.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.epp.mpc.core; bundle-version="1.11.0.v20240709-1650"; singleton:="true"
+       org.eclipse.epp.mpc.core [171]
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.message; version="[5.1.0,5.3.0)"
+           -> Export-Package: org.apache.hc.core5.http.message; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.net,org.apache.hc.core5.util"
+              org.apache.httpcomponents.core5.httpcore5 [65]
+                Unresolved requirement: Import-Package: org.conscrypt; resolution:="optional"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.io.support; version="[5.1.0,5.3.0)"
+           -> Export-Package: org.apache.hc.core5.http.io.support; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.http.support,org.apache.hc.core5.net"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.impl.io; version="[5.1.0,5.4.0)"
+           -> Export-Package: org.apache.hc.client5.http.impl.io; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.config,org.apache.hc.client5.http.io,org.apache.hc.client5.http.socket,org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.impl.io,org.apache.hc.core5.http.io,org.apache.hc.core5.http.message,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.pool,org.apache.hc.core5.util"
+              org.apache.httpcomponents.client5.httpclient5 [63]
+                Unresolved requirement: Import-Package: org.brotli.dec; version="[0.1.0,1.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: org.conscrypt; version="[2.5.0,3.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.io.entity; version="[5.2.0,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.io.entity; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.io"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.message; version="[5.2.0,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.message; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.net,org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.protocol; version="[5.2.0,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.protocol; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="javax.net.ssl,org.apache.hc.core5.function,org.apache.hc.core5.http"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.impl.nio; version="[5.2.0,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.impl.nio; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="javax.net.ssl,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.impl,org.apache.hc.core5.http.message,org.apache.hc.core5.http.nio,org.apache.hc.core5.http.nio.ssl,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.reactor,org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.nio.entity; version="[5.2.0,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.nio.entity; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.concurrent,org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.nio"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.net; version="[5.2.0,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.net; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.http"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.io.support; version="[5.2.0,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.io.support; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.http.support,org.apache.hc.core5.net"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.util; version="[5.2.0,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.util; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.http"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.reactor; version="[5.2.0,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.reactor; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.concurrent,org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.io,org.apache.hc.core5.net,org.apache.hc.core5.reactor.ssl,org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.io; version="[5.2.0,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.io; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.protocol,org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.ssl; version="[5.2.0,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.ssl; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="javax.net.ssl"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.function; version="[5.2.0,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.function; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.impl; version="[5.2.0,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.impl; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.pool; version="[5.2.0,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.pool; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.concurrent,org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.io,org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.nio.ssl; version="[5.2.0,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.nio.ssl; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="javax.net.ssl,org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.net,org.apache.hc.core5.reactor,org.apache.hc.core5.reactor.ssl,org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.reactor.ssl; version="[5.2.0,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.reactor.ssl; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="javax.net.ssl,org.apache.hc.core5.concurrent,org.apache.hc.core5.function,org.apache.hc.core5.io,org.apache.hc.core5.net,org.apache.hc.core5.reactor,org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.nio; version="[5.2.0,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.nio; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.protocol,org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.config; version="[5.2.0,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.config; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.impl.io; version="[5.2.0,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.impl.io; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="javax.net.ssl,org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.impl,org.apache.hc.core5.http.io,org.apache.hc.core5.http.message,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.io; version="[5.2.0,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.io; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.nio.support; version="[5.2.0,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.nio.support; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.concurrent,org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.http.nio,org.apache.hc.core5.http.protocol,org.apache.hc.core5.http.support,org.apache.hc.core5.net"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.ssl; version="[5.2.0,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.ssl; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.http"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http; version="[5.2.0,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="javax.net.ssl,org.apache.hc.core5.function,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.net,org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.nio.command; version="[5.2.0,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.nio.command; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.concurrent,org.apache.hc.core5.function,org.apache.hc.core5.http.nio,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.reactor"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.concurrent; version="[5.2.0,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.concurrent; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.support; version="[5.2.0,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.support; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.message,org.apache.hc.core5.net"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.entity; version="[5.1.0,5.4.0)"
+           -> Export-Package: org.apache.hc.client5.http.entity; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.io.entity"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.auth; version="[5.1.0,5.4.0)"
+           -> Export-Package: org.apache.hc.client5.http.auth; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.protocol,org.ietf.jgss"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.impl.classic; version="[5.1.0,5.4.0)"
+           -> Export-Package: org.apache.hc.client5.http.impl.classic; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.auth,org.apache.hc.client5.http.classic,org.apache.hc.client5.http.config,org.apache.hc.client5.http.cookie,org.apache.hc.client5.http.entity,org.apache.hc.client5.http.impl,org.apache.hc.client5.http.io,org.apache.hc.client5.http.protocol,org.apache.hc.client5.http.routing,org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.impl.io,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.pool,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.io; version="[5.1.0,5.4.0)"
+           -> Export-Package: org.apache.hc.client5.http.io; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="javax.net.ssl,org.apache.hc.client5.http,org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.impl.io,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.classic; version="[5.1.0,5.4.0)"
+           -> Export-Package: org.apache.hc.client5.http.classic; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.protocol,org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.config; version="[5.1.0,5.4.0)"
+           -> Export-Package: org.apache.hc.client5.http.config; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.ssl,org.apache.hc.core5.http2,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.protocol; version="[5.1.0,5.4.0)"
+           -> Export-Package: org.apache.hc.client5.http.protocol; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.auth,org.apache.hc.client5.http.config,org.apache.hc.client5.http.cookie,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.protocol"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.impl; version="[5.1.0,5.4.0)"
+           -> Export-Package: org.apache.hc.client5.http.impl; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.auth,org.apache.hc.client5.http.cookie,org.apache.hc.client5.http.protocol,org.apache.hc.client5.http.psl,org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.impl,org.apache.hc.core5.http.protocol,org.apache.hc.core5.net,org.apache.hc.core5.pool,org.apache.hc.core5.util,org.slf4j"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.io; version="[5.1.0,5.3.0)"
+           -> Export-Package: org.apache.hc.core5.http.io; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.protocol,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.io.entity; version="[5.1.0,5.3.0)"
+           -> Export-Package: org.apache.hc.core5.http.io.entity; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.io"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.protocol; version="[5.1.0,5.3.0)"
+           -> Export-Package: org.apache.hc.core5.http.protocol; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="javax.net.ssl,org.apache.hc.core5.function,org.apache.hc.core5.http"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.classic.methods; version="[5.1.0,5.4.0)"
+           -> Export-Package: org.apache.hc.client5.http.classic.methods; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.client5.http.config,org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.message"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.impl.auth; version="[5.1.0,5.4.0)"
+           -> Export-Package: org.apache.hc.client5.http.impl.auth; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.auth,org.apache.hc.core5.http,org.apache.hc.core5.http.message,org.apache.hc.core5.http.protocol,org.ietf.jgss"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http; version="[5.1.0,5.4.0)"
+           -> Export-Package: org.apache.hc.client5.http; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.client5.http.auth,org.apache.hc.client5.http.cookie,org.apache.hc.client5.http.protocol,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.protocol,org.apache.hc.core5.net,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.cookie; version="[5.1.0,5.4.0)"
+           -> Export-Package: org.apache.hc.client5.http.cookie; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.3.1.v20240126-0900"; version="5.3.1"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.protocol"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.util; version="[5.1.0,5.3.0)"
+           -> Export-Package: org.apache.hc.core5.util; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="org.apache.hc.core5.http"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http; version="[5.1.0,5.3.0)"
+           -> Export-Package: org.apache.hc.core5.http; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.2.3.v20230922-1600"; version="5.2.3"; uses:="javax.net.ssl,org.apache.hc.core5.function,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.net,org.apache.hc.core5.util"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.epp.mpc.core [osgi.identity; type="osgi.bundle"; version:Version="1.11.0.v20240709-1650"; osgi.identity="org.eclipse.epp.mpc.core"; singleton:="true"] because it is exposed to package 'org.apache.hc.core5.http' from resources org.apache.httpcomponents.core5.httpcore5 [osgi.identity; type="osgi.bundle"; version:Version="5.2.3.v20230922-1600"; osgi.identity="org.apache.httpcomponents.core5.httpcore5"] and org.apache.httpcomponents.core5.httpcore5 [osgi.identity; type="osgi.bundle"; version:Version="5.3.2.v20250110-0800"; osgi.identity="org.apache.httpcomponents.core5.httpcore5"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.epp.mpc.core [osgi.identity; type="osgi.bundle"; version:Version="1.11.0.v20240709-1650"; osgi.identity="org.eclipse.epp.mpc.core"; singleton:="true"]
+    import: (&(osgi.wiring.package=org.apache.hc.core5.http)(&(version>=5.1.0)(!(version>=5.3.0))))
+     |
+    export: osgi.wiring.package: org.apache.hc.core5.http
+  org.apache.httpcomponents.core5.httpcore5 [osgi.identity; type="osgi.bundle"; version:Version="5.2.3.v20230922-1600"; osgi.identity="org.apache.httpcomponents.core5.httpcore5"]
+
+Chain 2:
+  org.eclipse.epp.mpc.core [osgi.identity; type="osgi.bundle"; version:Version="1.11.0.v20240709-1650"; osgi.identity="org.eclipse.epp.mpc.core"; singleton:="true"]
+    import: (&(osgi.wiring.package=org.apache.hc.client5.http)(&(version>=5.1.0)(!(version>=5.4.0))))
+     |
+    export: osgi.wiring.package=org.apache.hc.client5.http; uses:=org.apache.hc.core5.http
+  org.apache.httpcomponents.client5.httpclient5 [osgi.identity; type="osgi.bundle"; version:Version="5.3.1.v20240126-0900"; osgi.identity="org.apache.httpcomponents.client5.httpclient5"]
+    import: (&(osgi.wiring.package=org.apache.hc.core5.http)(&(version>=5.2.0)(!(version>=6.0.0))))
+     |
+    export: osgi.wiring.package: org.apache.hc.core5.http
+  org.apache.httpcomponents.core5.httpcore5 [osgi.identity; type="osgi.bundle"; version:Version="5.3.2.v20250110-0800"; osgi.identity="org.apache.httpcomponents.core5.httpcore5"]
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2102)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2093)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2033)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1996)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1912)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.equinox.app 0 0 2026-06-14 23:09:13.099
+!MESSAGE Product org.eclipse.epp.package.java.product could not be found.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-06-14 23:09:44.700
+!MESSAGE Logback config file: D:\laragon\www\Basic-Java-Maven-main\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY org.eclipse.ui 2 0 2026-06-14 23:09:45.559
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2026-06-14 23:09:45.559
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2026-06-14 23:09:46.502
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2026-06-14 23:09:46.502
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-06-14 23:09:51.420
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\gilang tirta'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.core.jobs 2 2 2026-06-14 23:10:00.918
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersionsWrapper$LoadVersionsJob RUNNING
+	 at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	 at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52)
+	 at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1221)
+	 at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1817)
+	 at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:1149)
+	 at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1807)
+	 at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1676)
+	 at java.base/java.net.InetAddress.getByName(InetAddress.java:1578)
+	 at java.base/java.net.InetSocketAddress.<init>(InetSocketAddress.java:230)
+	 at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+	 at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+	 at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+	 at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264)
+	 at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:377)
+	 at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193)
+	 at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1228)
+	 at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1114)
+	 at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179)
+	 at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1676)
+	 at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1600)
+	 at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:223)
+	 at org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersions.downloadVersionInformation(PublishedGradleVersions.java:164)
+	 at org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersions.tryToDownloadAndCacheVersions(PublishedGradleVersions.java:151)
+	 at org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersions.create(PublishedGradleVersions.java:111)
+	 at org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersionsWrapper$LoadVersionsJob.run(PublishedGradleVersionsWrapper.java:73)
+	 at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 2 2 2026-06-14 23:10:00.919
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.oomph.internal.ui.EarlyStart$1 RUNNING
+	 at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	 at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52)
+	 at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1221)
+	 at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1817)
+	 at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:1149)
+	 at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1807)
+	 at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1676)
+	 at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:48)
+	 at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:169)
+	 at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	 at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	 at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	 at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	 at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	 at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	 at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	 at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	 at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	 at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	 at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	 at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	 at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	 at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:174)
+	 at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+	 at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
+	 at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:576)
+	 at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:887)
+	 at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:578)
+	 at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:108)
+	 at org.eclipse.oomph.setup.internal.core.util.ECFURIHandlerImpl$InputStreamConnectionHandler.sendConnectionRequest(ECFURIHandlerImpl.java:1908)
+	 at org.eclipse.oomph.setup.internal.core.util.ECFURIHandlerImpl$ConnectionHandler.process(ECFURIHandlerImpl.java:1607)
+	 at org.eclipse.oomph.setup.internal.core.util.ECFURIHandlerImpl.createInputStream(ECFURIHandlerImpl.java:320)
+	 at org.eclipse.emf.ecore.resource.impl.ExtensibleURIConverterImpl.createInputStream(ExtensibleURIConverterImpl.java:358)
+	 at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1314)
+	 at org.eclipse.oomph.setup.internal.core.util.SetupCoreUtil.handleArchiveRedirection(SetupCoreUtil.java:696)
+	 at org.eclipse.oomph.setup.internal.core.util.SetupCoreUtil.configureResourceSet(SetupCoreUtil.java:474)
+	 at org.eclipse.oomph.setup.internal.core.util.SetupCoreUtil.configureResourceSet(SetupCoreUtil.java:268)
+	 at org.eclipse.oomph.setup.internal.core.util.SetupCoreUtil.createResourceSet(SetupCoreUtil.java:262)
+	 at org.eclipse.oomph.setup.ui.recorder.RecorderManager.<clinit>(RecorderManager.java:121)
+	 at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:218)
+	 at org.eclipse.oomph.setup.ui.EarlyStartup.earlyStartup(EarlyStartup.java:23)
+	 at org.eclipse.oomph.internal.ui.EarlyStart.run(EarlyStart.java:119)
+	 at org.eclipse.oomph.internal.ui.EarlyStart$1.run(EarlyStart.java:98)
+	 at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
